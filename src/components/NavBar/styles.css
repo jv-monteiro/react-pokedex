@@ -1,0 +1,14 @@
+.Nav-container{
+    background-color: rgb(252, 72, 72);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Fav{ 
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.479);
+    color: rgba(255, 255, 255, 0.753);
+    margin-right: 30px;
+    font-weight: bold;
+}

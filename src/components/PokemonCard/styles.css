@@ -1,0 +1,25 @@
+.Card-Box{
+    display: flex;
+    justify-content: space-around;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 150px;
+    max-height: 150px;
+    align-items: center;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 10px #50505083;
+}
+.Card-col-1 > img{
+    width: 100px;
+    
+}
+.Card-col-3 > p{
+    font-size: 20px;
+}
+.Card-col-3 > button{
+    font-size: 20px;
+    border-style: none;
+    background-color: white;
+    
+}

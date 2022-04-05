@@ -1,0 +1,15 @@
+.Pokedex-body{
+    margin: 0 auto;
+    
+}
+
+.Pokedex-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 20%;
+    justify-content: center;
+    align-items: center;
+}
+.Pokemon-card{
+    margin: 10px;
+}

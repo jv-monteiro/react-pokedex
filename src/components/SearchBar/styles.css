@@ -1,0 +1,27 @@
+.SearchBar-Row{
+    padding: 25px;
+}
+.SearchBar{
+    display: flex;
+}
+.SearchBar > input{
+    height: 50px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(226, 226, 226);
+
+}
+.SearchBtn{
+    margin-left: 10px;
+}
+
+.SearchBtn > button{
+    color: white;
+    height: 53px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(252, 72, 72);
+}
+.SearchBtn > button:hover{
+    background-color: rgb(138, 0, 0);
+}
