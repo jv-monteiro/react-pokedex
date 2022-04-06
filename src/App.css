@@ -1,4 +1,30 @@
 .App{
     margin: 0 auto;
+    
+}
+
+.footer{
+    align-items: center;
+    background-color: rgb(110, 108, 108);
+    
+}
+.footer-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer img{
+    width: 32px;
+    padding: 10px;
+}
+.footer p{
+    padding: 5px;
+    color: white;
+    font-weight: bolder;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
 }
 

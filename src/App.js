@@ -3,6 +3,10 @@ import './App.css';
 
 import {searchPokemon, getPokemon, getPokemonData} from './components/Api.js'
 
+import gitLogo from './assets/github.png'
+import linkeLogo from './assets/linkedin.png'
+
+
 import NavBar from './components/NavBar/NavBar.js'
 import SearchBar from './components/SearchBar/SearchBar.js'
 import Pokedex from './components/Pokedex/Pokedex.js'
@@ -108,7 +112,15 @@ function App() {
       </div>
     </div>
     <div className='footer'>
-      <p></p>
+      <div className='footer-row'>
+        <p>Pokédex by João Monteiro</p>
+        <a target='_blank' href='https://github.com/jv-monteiro'>
+          <img src={gitLogo}></img>
+        </a>
+        <a target='_blank' href='https://www.linkedin.com/in/jvmonteiro/'>
+          <img src={linkeLogo}></img>
+        </a>
+      </div>
     </div>
     </FavoriteProvider>
   );

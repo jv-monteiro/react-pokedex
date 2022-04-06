@@ -1,0 +1,79 @@
+
+.Modal-box{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.322);
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Modal-Container{
+    background-color: white;
+    color: black;
+    width: 50%;
+    min-height: 50%;
+    min-width: 360px;
+    border-radius: 20px;
+}
+.Modal-Close{
+    position: relative;
+    display: flex;
+    align-items: center;
+    right: calc(-100% + 64px);
+    margin: 20px;
+}
+.Modal-CloseBtn{
+    
+    background-color: rgb(252, 72, 72);
+    outline: none;
+    width: 32px;
+    height: 32px;
+    border-style: none;
+    border-radius: 100%;
+    font-weight: bold;
+    color: white;
+   
+}
+.Modal-CloseBtn:hover{
+    background-color: rgb(138, 0, 0);
+}
+.Modal-Content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+
+.modalCol-1 > img{
+    width: 300px;
+    min-width: 100px;
+}
+
+.modalCol-2 .pkmId{
+    font-size: 32px;
+}
+.modalCol-2 .pkmName{
+    font-size: 32px;
+    font-weight: bold;
+}
+.modalCol-2 .pkmType{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalCol-3{
+    max-width: 200px;
+}
+.modalCol-3 h1{
+    font-size: 16px;
+    font-weight: bold;
+}
+.modalMoves{
+    overflow-y: auto;
+    max-height: 300px;
+}
