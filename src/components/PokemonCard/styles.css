@@ -22,9 +22,8 @@
 .Card-col-3 > p{
     font-size: 20px;
 }
-.Card-col-3 > button{
-    font-size: 20px;
-    border-style: none;
+.Card-col-3 > img{
+    width: 20px;
     background-color: rgba(255, 255, 255, 0);
     
 }

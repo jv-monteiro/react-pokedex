@@ -17,12 +17,14 @@
     min-height: 50%;
     min-width: 360px;
     border-radius: 20px;
+    
 }
+
 .Modal-Close{
     position: relative;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    right: calc(-100% + 64px);
     margin: 20px;
 }
 .Modal-CloseBtn{
@@ -36,6 +38,10 @@
     font-weight: bold;
     color: white;
    
+}
+.Modal-FavBtn{
+    background-color: rgba(255, 255, 255, 0);
+    border-style: none;
 }
 .Modal-CloseBtn:hover{
     background-color: rgb(138, 0, 0);

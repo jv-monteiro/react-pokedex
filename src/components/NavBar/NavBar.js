@@ -10,12 +10,13 @@ export default function NavBar(){
 
 
     return(
-        <div>
+        <div className='Nav'>
             <nav className='Nav-container'>
                 <div>
-                   <img src={Logo} width={250} className='Logo'></img>
+                   <a href="/"><img src={Logo} width={250} className='Logo'></img></a>
                 </div>
-                <div className='Fav'> Favorites ({favoritePokemons.length})</div>
+                <button className='Fav'> Favorites ({favoritePokemons.length})</button>
+                
             </nav>
         </div>
     )

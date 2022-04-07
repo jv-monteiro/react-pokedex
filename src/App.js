@@ -94,6 +94,7 @@ function App() {
       >
     <div className="App">
       <div className='NavBar'><NavBar/></div>
+      
       <div className='SearchApp'>
         <SearchBar
           onSearch={onSearchHandler}/>

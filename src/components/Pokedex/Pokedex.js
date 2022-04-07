@@ -1,12 +1,15 @@
-import React from "react";
+import React,{useContext} from "react";
 import style from './styles.css'
 import PokemonCard from "../PokemonCard/Pokemons";
 import Pagination from "../Pagination/Pagination";
 
 
+
 export default function Pokedex(props){
     const {pokemons, loading, page, setPage, totalPages} = props;
-    console.log('pokemons',pokemons)
+    
+
+    
 
     const previusHandler = () =>{
         if(page > 0){

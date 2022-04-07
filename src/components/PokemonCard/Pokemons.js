@@ -11,11 +11,6 @@ export default function PokemonCard(props){
     const [modalVisible, setModalVisible] = React.useState(false)
     const {pokemon} = props
     
-    const favoriteBtn = () =>{
-        updateFavorites(pokemon.name)
-    }
-    
-    
 
     const favOff = () =>{
         const style = {
@@ -34,7 +29,7 @@ export default function PokemonCard(props){
             <img src={FavIcon} style={style}></img>
         )
     }
-    const heart = favoritePokemons.includes(pokemon.name) ?  favIcon() : favOff() ;
+    const heart = favoritePokemons.includes(pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)) ?  favIcon() : favOff() ;
 
 
 
@@ -56,7 +51,7 @@ export default function PokemonCard(props){
                     </div>
                     <div className="Card-col-3">
                         <p>#{pokemon.id}</p>
-                        <button onClick={favoriteBtn}>{heart}</button>
+                        <div>{heart}</div>
                     </div>
                 </div>
             </button>
@@ -74,6 +69,7 @@ export default function PokemonCard(props){
                                     <div key={index}>{move.move.name.charAt(0).toUpperCase() + move.move.name.slice(1)}</div>
                                     )
                                 })}
+                                pokemonFav={favoritePokemons}
                             />) : null}
         </div>
         
