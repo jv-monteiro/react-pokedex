@@ -1,9 +1,10 @@
+
 .Nav-container{
     background-color: rgb(252, 72, 72);
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding-left: 5%;
 }
 .Fav{ 
     width: 150px;

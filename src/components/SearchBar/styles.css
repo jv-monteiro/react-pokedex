@@ -1,5 +1,6 @@
 .SearchBar-Row{
     padding: 25px;
+    margin-left: 5%;
 }
 .SearchBar{
     display: flex;

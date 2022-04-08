@@ -1,6 +1,9 @@
+*{
+    font-family: 'Roboto Mono';
+}
 .App{
     margin: 0 auto;
-    
+    align-items: center;
 }
 
 .footer{

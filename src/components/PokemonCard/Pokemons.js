@@ -1,17 +1,42 @@
-import React, {useContext,useState} from "react";
+import React, {useContext,useState,useEffect} from "react";
 import FavoriteContext from "../../contexts/favoritesContext";
 import style from './styles.css'
 import Modal from '../Modal/modal.js'
-
+import { TypeColors } from "../Utilis/Utilis";
+import { seachEvolutionChain,getEvoData } from "../Api";
 import FavIcon from '../../assets/Fav-full.png'
 import FavOff from '../../assets/Fav.png'
 
 export default function PokemonCard(props){
     const {favoritePokemons, updateFavorites} = useContext(FavoriteContext)
     const [modalVisible, setModalVisible] = React.useState(false)
+    const [evoChain, setEvoChain] = React.useState([])
     const {pokemon} = props
     
+    
+    /////////////////////
+    
 
+    const fetchEvo = async () => {
+        const getId = pokemon.id
+        const getInfos = await seachEvolutionChain(getId)
+        setEvoChain(getInfos)
+    }
+    useEffect(()=>{
+        fetchEvo();
+        console.log(evoChain)
+    },[modalVisible])
+
+    
+
+    //BackgroundColor
+    let finalColor;
+    if(pokemon.types.length){
+        finalColor = TypeColors(pokemon.types[0].type.name, pokemon.types.length)
+    }
+    
+
+    //Icon Fav
     const favOff = () =>{
         const style = {
             width: 16
@@ -35,8 +60,8 @@ export default function PokemonCard(props){
 
     return(
         <div>
-            <button onClick={()=> setModalVisible(true)} className="pokemonBtn">
-                <div className="Card-Box">
+            <button onClick={()=> setModalVisible(true)} className="pokemonBtn" >
+                <div className="Card-Box" style={{backgroundColor: `${finalColor}` }}>
                     <div className="Card-col-1">
                         <img src= {pokemon.sprites.other["official-artwork"].front_default}></img>
                     </div>
@@ -70,6 +95,14 @@ export default function PokemonCard(props){
                                     )
                                 })}
                                 pokemonFav={favoritePokemons}
+                                typeColor={pokemon.types[0].type.name}
+                                pokemonHp={pokemon.stats[0].base_stat}
+                                pokemonAtk={pokemon.stats[1].base_stat}
+                                pokemonDef={pokemon.stats[2].base_stat}
+                                pokemonSAtk={pokemon.stats[3].base_stat}
+                                pokemonSDef={pokemon.stats[4].base_stat}
+                                pokemonSpeed={pokemon.stats[5].base_stat}
+  
                             />) : null}
         </div>
         

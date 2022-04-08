@@ -24,3 +24,20 @@ export const getPokemonData = async (url) =>{
         console.log(error)
     }
 }
+export const seachEvolutionChain = async (pokemonId) =>{
+    try{
+        let url = `https://pokeapi.co/api/v2/evolution-chain/${pokemonId}/`
+        const response = await fetch(url)
+        return await response.json()
+    }catch(error){
+        console.log(error)
+    }
+}
+export const getEvoData = async (url) =>{
+    try{
+        const response = await fetch(url)
+        return await response.json()
+    }catch(error){
+        console.log(error)
+    }
+}

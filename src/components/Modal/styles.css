@@ -9,15 +9,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .Modal-Container{
     background-color: white;
     color: black;
-    width: 50%;
-    min-height: 50%;
+    width: 40%;
+    min-height: 40%;
     min-width: 360px;
     border-radius: 20px;
-    
 }
 
 .Modal-Close{
@@ -54,32 +54,93 @@
     margin: 20px;
 }
 
-
+.modalCol-1{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.id{
+    font-size: 24px;
+    line-height: 0%;
+    color: rgba(0, 0, 0, 0.637);
+}
+.name{
+    font-size: 36px;
+    line-height: 0%;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.637);
+}
 .modalCol-1 > img{
+    
     width: 300px;
     min-width: 100px;
+    line-height: 0%;
 }
 
-.modalCol-2 .pkmId{
-    font-size: 32px;
+.modalRow-2{
+    margin: 0 auto;
+
 }
-.modalCol-2 .pkmName{
+.stats{
     font-size: 32px;
     font-weight: bold;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.637);
 }
-.modalCol-2 .pkmType{
+.modalCol-2{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 200px;
+}
+.modalCol-2 h4{
+    color: red;
+}
+.modalCol-2 p{
+    color: rgb(16, 0, 43);
+}
+
+.pkmType{
     display: flex;
     justify-content: space-between;
 }
+.pkmType p{
+    padding: 6px;
+    line-height: 0%;
+}
 
-.modalCol-3{
-    max-width: 200px;
+.not-found{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    height: 80vh;
 }
-.modalCol-3 h1{
-    font-size: 16px;
-    font-weight: bold;
+.not-found img{
+    max-width: 300px;
 }
-.modalMoves{
-    overflow-y: auto;
-    max-height: 300px;
+.not-found p{
+    font-size: 32px
 }
+
+@keyframes scale-in{
+    0%{
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        position: absolute;
+    }
+    100%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+.Modal-Container{
+    -webkit-animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	        animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+
+

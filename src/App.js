@@ -5,6 +5,7 @@ import {searchPokemon, getPokemon, getPokemonData} from './components/Api.js'
 
 import gitLogo from './assets/github.png'
 import linkeLogo from './assets/linkedin.png'
+import NotFound from './assets/not-found.png'
 
 
 import NavBar from './components/NavBar/NavBar.js'
@@ -22,6 +23,7 @@ function App() {
 
   const favoritesKey = "f"
   const itensPerPage = 25
+
 
   const fetchPokemons = async () =>{
     try {
@@ -88,6 +90,7 @@ function App() {
   }
 
   return (
+    
     <FavoriteProvider
       value={{favoritePokemons: favorites, 
               updateFavorites: updateFavorites}}
@@ -100,7 +103,8 @@ function App() {
           onSearch={onSearchHandler}/>
           {notFound ? (
             <div className='not-found'>
-              Not Found!
+              <p>Not Found!</p>
+              <img src={NotFound}/>
             </div>
           ) :
         (<Pokedex
