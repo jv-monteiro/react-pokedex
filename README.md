@@ -1,7 +1,7 @@
 ![](src/assets/logo.png)
 # React Pokédex
 
-Uma pokedéx simples criada com [React](https://reactjs.org) e [PokéAPI](https://pokeapi.co)
+Uma pokédex simples criada com [React](https://reactjs.org) e [PokéAPI](https://pokeapi.co)
 
 # Link
 
@@ -24,4 +24,4 @@ Teste a página [Aqui!](https://jv-monteiro.github.io/react-pokedex/)
 # Rodando Localmente
 - Clone esse repositório
 - Rode `npm install` e `npm start` na aplicação
-- A aplicação irá abrir em `http://localhost:3000/` ou na próxima porta disponivel
+- A aplicação irá abrir em `http://localhost:3000/` ou na próxima porta disponível
