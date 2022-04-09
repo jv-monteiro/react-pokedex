@@ -1,3 +1,4 @@
+![](src/assets/logo.png)
 # React Pokédex
 
 Uma pokedéx simples criada com [React](https://reactjs.org) e [PokéAPI](https://pokeapi.co)
