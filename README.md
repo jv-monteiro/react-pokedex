@@ -12,6 +12,7 @@ Teste a página [Aqui!](https://jv-monteiro.github.io/react-pokedex/)
 - Ver a lista completa de todas as regiões 
 - Pesquisar pokémons pelo nome ou ID
 - Detalhes do pokémons escolhido
+- Adicionar aos favoritos
 - Design Responsivo
 
 # Feito com
